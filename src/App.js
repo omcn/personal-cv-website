@@ -1,10 +1,10 @@
 import React from 'react';
-import CVWebsite from './website'; // Make sure this file exists in src/
+import Website from './website'; // ✅ Make sure file is named 'website.jsx'
 
 function App() {
   return (
     <div className="App">
-      <CVWebsite />
+      <Website />
     </div>
   );
 }

@@ -116,7 +116,7 @@ export default function Website() {
           {Array.from({ length: 20 }, (_, i) => (
             <img
               key={i}
-              src={`/coursework_pages/full_page_${i + 1}.png`}
+              src={`${process.env.PUBLIC_URL}/coursework_pages/full_page_${i + 1}.png`}
               alt={`Coursework Page ${i + 1}`}
               className="rounded shadow-md"
             />
@@ -125,7 +125,7 @@ export default function Website() {
         </GlowSection>
 
         <a
-          href="/40401731carnival (9)/db project/index1.HTML"
+          href={`${process.env.PUBLIC_URL}/40401731carnival (9)/db project/index1.HTML`}
           target="_blank"
           rel="noopener noreferrer"
           className="fixed top-5 right-5 z-50 bg-emerald-500 text-white text-2xl p-4 rounded-full shadow-lg hover:bg-emerald-400 transition-all"
