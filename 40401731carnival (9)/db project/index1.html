@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnival Shooter Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-landing" class="container">
+        <h1>Welcome to the Carnival Shooter Game!</h1>
+        <form id="player-info-form">
+            <label for="player-name">Enter your name:</label>
+            <input type="text" id="player-name" required>
+            <button type="submit">Start Game</button>
+        </form>
+    </div>
+
+    <div id="gameplay" class="container" style="display: none;">
+        <div class="game-info">
+            <p>Current Level: <span id="current-level">1</span></p>
+            <p>Time Limit: <span id="time-limit">30</span> seconds</p>
+            <p>Ammo: <span id="ammo-count">10</span></p>
+            <button id="reload-btn">Reload</button>
+        </div>
+       
+    </div>
+    <div>
+        <!-- Gun image -->
+       <img id="gun-img" src="c:gun.png" alt="Gun" style="display: none;">
+       <!-- Target image -->
+       <img id="target-img" src="target.png" alt="Target" style="display: none;">
+       <!-- Enemy image -->
+       <img id="enemy-img" src="enemy.png" alt="Enemy" style="display: none;">
+       </div>
+
+    <div id="game-summary" class="container" style="display: none;">
+        <h2>Game Summary</h2>
+        <p id="game-duration"></p>
+        <p id="shots-fired"></p>
+        <p id="hits"></p>
+        <p id="negative-hits"></p>
+        <p id="accuracy"></p>
+        <p id="overall-duration"></p>
+        <p id="overall-score"></p>
+        <button id="play-again-btn">Play Again</button>
+        <button id="exit-game-btn">Exit Game</button>
+        <div id="leaderboard">
+            <h2>Game Leaderboard</h2>
+            <ul id="leaderboard-list"></ul>
+        </div>
+    </div>
+
+    <script src="script test.js"></script>
+</body>
+</html>
