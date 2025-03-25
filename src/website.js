@@ -52,8 +52,8 @@ export default function Website() {
         <GlowSection title="Education">
           <p><strong>Queen's University Belfast</strong>, BSc Computer Science (2023–2027)</p>
           <ul className="list-disc list-inside ml-4 mt-2">
-            <li>Level 1 Modules: Computer Architecture (47%), Databases (52%), Cybersecurity (80%), Web Tech (53%), Programming (55%)</li>
-            <li>Level 2 Modules: Software Engineering (63%), Data Structures (62%), Transferable Skills (68%)</li>
+            <li>Level 1 Modules: Computer Architecture, Databases, Cybersecurity, Web Tech, Programming</li>
+            <li>Level 2 Modules: Software Engineering , Data Structures, Transferable Skills</li>
           </ul>
           <p className="mt-2">A Levels: Technology & Design (B), Software Systems Development (B), Physics (C)</p>
         </GlowSection>
@@ -125,7 +125,7 @@ export default function Website() {
         </GlowSection>
 
         <a
-          href={`${process.env.PUBLIC_URL}/40401731carnival%20(9)/db%20project/index1.html`}
+          href="https://omcn.github.io/personal-cv-website/40401731carnival%20(9)/db%20project/index1.html"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed top-5 right-5 z-50 bg-emerald-500 text-white text-2xl p-4 rounded-full shadow-lg hover:bg-emerald-400 transition-all"
