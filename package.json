@@ -1,5 +1,6 @@
 {
   "name": "my-personal-website",
+  "homepage": "https://omcn.github.io/personal-cv-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -41,7 +42,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
-    "gh-pages": "^6.3.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17"
   }

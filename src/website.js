@@ -34,7 +34,7 @@ export default function Website() {
         </a>
 
         <a
-          href="/Oisin_mcnicholl_-_University_Student Final CV copy (1).pdf"
+          // href="/Oisin_mcnicholl_-_University_Student Final CV copy (1).pdf"
           download
           className="mt-6 inline-block px-6 py-2 bg-cyan-500 text-white rounded-lg shadow hover:bg-cyan-400 transition-all"
         >
@@ -125,7 +125,7 @@ export default function Website() {
         </GlowSection>
 
         <a
-          href={`${process.env.PUBLIC_URL}/40401731carnival (9)/db project/index1.HTML`}
+          href={`${process.env.PUBLIC_URL}/40401731carnival%20(9)/db%20project/index1.html`}
           target="_blank"
           rel="noopener noreferrer"
           className="fixed top-5 right-5 z-50 bg-emerald-500 text-white text-2xl p-4 rounded-full shadow-lg hover:bg-emerald-400 transition-all"
