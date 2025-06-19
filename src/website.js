@@ -2,13 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export default function Website() {
-  const courseworkImages = Array.from({ length: 20 }, (_, i) =>
-    `/coursework_pages/full_page_${i + 1}.png`
-  );
-
   const skills = [
-    "HTML", "CSS", "Python", "C++", "Java", "JavaScript", "SQL",
-    "Git", "Software Development", "Programming"
+    "HTML", "CSS", "JavaScript", "Java", "C#", "SQL", "C++", "Python", "React (Next.js)", "Node.js"
   ];
 
   return (
@@ -22,43 +17,32 @@ export default function Website() {
         >
           Oisin McNicholl
         </motion.h1>
-        <p className="text-gray-400 mt-2">Computer Science Student | Queen's University Belfast</p>
-        <p className="text-sm mt-1 text-gray-500">Limavady, UK | 07984612053 | oisinmcnicholl4@gmail.com</p>
-        <a
-          href="https://www.linkedin.com"
-          className="text-cyan-400 hover:underline mt-2 inline-block"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
-
-        <a
-          // href="/Oisin_mcnicholl_-_University_Student Final CV copy (1).pdf"
-          download
-          className="mt-6 inline-block px-6 py-2 bg-cyan-500 text-white rounded-lg shadow hover:bg-cyan-400 transition-all"
-        >
-          Download CV
-        </a>
+        <p className="text-gray-400 mt-2">Limavady, United Kingdom | oisinmcnicholl4@gmail.com | Full UK Driving License</p>
+        <p className="text-sm mt-1 text-gray-500">
+          GitHub: <a href="https://github.com/omcn" className="text-cyan-400 hover:underline">omcn</a> |
+          Website: <a href="https://forkmyfeelings.com/" className="text-cyan-400 hover:underline">forkmyfeelings.com</a> |
+          LinkedIn: <a href="https://www.linkedin.com/in/omcn100/" className="text-cyan-400 hover:underline">omcn100</a>
+        </p>
       </header>
 
       <main className="max-w-4xl mx-auto space-y-12">
-        <GlowSection title="About Me">
+        <GlowSection title="Profile">
           <p>
-            I'm a computer science student at Queen's University Belfast, building strong foundations in programming and software development. I love solving problems, writing code, and creating tech that works beautifully.
+            Computer Science undergraduate at Queen’s University Belfast seeking placement with a strong foundation in programming and full-stack development. Skilled in building interactive applications and solving real-world problems. I am a competitive swimmer who is used to high-pressure environments, and I am eager to contribute to innovative technical teams and continuously develop my professional skills.
           </p>
         </GlowSection>
 
         <GlowSection title="Education">
-          <p><strong>Queen's University Belfast</strong>, BSc Computer Science (2023–2027)</p>
+          <p><strong>Queen’s University Belfast</strong> — BSc Computer Science (2023 – 2027) | Currently on a 2:1 as of 2nd year exams June 9th 2025.</p>
           <ul className="list-disc list-inside ml-4 mt-2">
-            <li>Level 1 Modules: Computer Architecture, Databases, Cybersecurity, Web Tech, Programming</li>
-            <li>Level 2 Modules: Software Engineering , Data Structures, Transferable Skills</li>
+            <li>Level 2 Relevant Modules: Software Engineering (73%), Data Structures and Algorithms (63%), Professional Skills (68%)</li>
+            <li>Level 1 Relevant Modules: Cybersecurity (80%)</li>
+            <li>A Levels (2023): Technology and Design (B), Software Systems Development (B), Physics (C)</li>
+            <li>AS Levels (2022): Technology and Design (A), Software Systems Development (A), Physics (B)</li>
           </ul>
-          <p className="mt-2">A Levels: Technology & Design (B), Software Systems Development (B), Physics (C)</p>
         </GlowSection>
 
-        <GlowSection title="Skills">
+        <GlowSection title="Technical Skills">
           <div className="flex flex-wrap gap-3">
             {skills.map(skill => (
               <span key={skill} className="bg-cyan-600 text-white px-3 py-1 rounded-full text-sm shadow hover:bg-cyan-500 transition">
@@ -66,83 +50,75 @@ export default function Website() {
               </span>
             ))}
           </div>
+          <p className="mt-4 text-sm text-gray-400">Tools: Eclipse, MySQL Server, Visual Studio, VS Code, Supabase, GitHub, GitLab, Anaconda, Jupyter Notebook, Pycharm, IntelliJ, Arduino IDE, Vercel</p>
         </GlowSection>
 
-        <GlowSection title="Courses & Certifications">
+        <GlowSection title="Certificates">
           <ul className="list-disc list-inside ml-4">
-            <li>Java Masterclass – Udemy</li>
-            <li>C# Crash Course – Udemy</li>
-            <li>C++ Masterclass – Udemy</li>
-            <li>RNLI Lifeguard Certification</li>
-          </ul>
-        </GlowSection>
-
-        <GlowSection title="Achievements">
-          <ul className="list-disc list-inside ml-4">
-            <li>Top achiever in Software Systems Dev & Technology and Design</li>
-            <li>Best project awards in both subjects</li>
-            <li>Swimmer of the Year & Swim Team Captain</li>
+            <li>Java Masterclass by Tim Buchalka (Udemy)</li>
+            <li>C# Crash Course by Tim Buchalka</li>
+            <li>Learn to Create Jarvis AI with Python by Arbaz Khan (Udemy)</li>
           </ul>
         </GlowSection>
 
         <GlowSection title="Projects">
           <ul className="list-disc list-inside ml-4">
-            <li>Department store app (C# & SQL)</li>
-            <li>Java food-based library app with UML + bug testing</li>
-            <li>Unity game combining turn-based, survival & platforming (C# & AI)</li>
-            <li>Arduino-powered reaction game with custom PCB</li>
+            <li><strong>Fork my Feelings</strong> – Full-stack mood-based recipe app using React (Next.js), Supabase, WebRTC, and Framer Motion.</li>
+            <li><strong>Software Engineering Project</strong> – Monopoly-inspired Java game built in Eclipse as part of a 5-person team using GitLab.</li>
+            <li><strong>AI Coursework</strong> – Built custom image features and trained models (Logistic Regression, k-NN, Random Forests) for binary classification.</li>
+            <li><strong>Unity Game</strong> – Designed multi-genre adventure game (turn-based, survival, platformer) using C# and mesh AI.</li>
+            <li><strong>Arduino Reaction Game</strong> – Built a physical reaction game using custom PCBs and Arduino, documented with a 20-page report.</li>
+          </ul>
+        </GlowSection>
+        <GlowSection title="A-Level Technology Coursework Project">
+          <p className="mb-4 text-gray-400">
+            Full scan of my coursework project: designing and building a custom reaction game device with Arduino, PCB design, and documentation.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {Array.from({ length: 20 }, (_, i) => (
+              <img
+                key={i}
+                src={`${process.env.PUBLIC_URL}/coursework_pages/full_page_${i + 1}.png`}
+                alt={`Coursework Page ${i + 1}`}
+                className="rounded shadow-md"
+              />
+            ))}
+          </div>
+        </GlowSection>
+
+
+        <GlowSection title="Work & Volunteering Experience">
+          <ul className="list-disc list-inside ml-4">
+            <li>Lifeguard Training & Certification: In-depth CPR, rescue coordination, teamwork.</li>
+            <li>Seagate Experience Day: Team lead in algorithmic challenge, 1st place finish.</li>
+            <li>Bentley Experience Day: Exposure to engineering workflows and innovation.</li>
+            <li>QUB Surf Club Safety Officer: Conducted risk assessments and led emergency responses.</li>
+            <li>Swim Club Team Captain: Mentored younger swimmers and organized swim galas.</li>
           </ul>
         </GlowSection>
 
-        <GlowSection title="Soft Skills">
-          <p>Problem Solving • Teamwork • Adaptability • Leadership • Communication • Work Ethic</p>
+        <GlowSection title="Achievements & Experience">
+          <ul className="list-disc list-inside ml-4">
+            <li>Top achiever in Software Systems Development and Technology & Design.</li>
+            <li>Taught myself SSD syllabus and earned top marks after teacher absence.</li>
+            <li>Swimmer of the Year – Achieved national finals while maintaining a 5:30 AM training schedule and balancing academics with personal projects.</li>
+          </ul>
         </GlowSection>
 
-        <GlowSection title="Extracurricular Activities">
+        <GlowSection title="Extra-Curricular">
           <p><strong>QUB Clubs:</strong> Surfing, Swimming, Snowsports, Computer Science, Muay Thai</p>
-          <p><strong>Hobbies:</strong> Gaming, Coding Challenges, Brain Teasers, Surfing</p>
         </GlowSection>
-
-        <GlowSection title="Internships">
-          <p>Seagate Experience Day – Led team in solving algorithmic challenges efficiently.</p>
-        </GlowSection>
-
-        <GlowSection title="A-Level Technology Coursework Project">
-          <p className="mb-4 text-gray-400">
-          Full scan of my coursework project: designing and building a custom reaction game device with Arduino + PCB + documentation.
-          </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {Array.from({ length: 20 }, (_, i) => (
-            <img
-              key={i}
-              src={`${process.env.PUBLIC_URL}/coursework_pages/full_page_${i + 1}.png`}
-              alt={`Coursework Page ${i + 1}`}
-              className="rounded shadow-md"
-            />
-          ))}
-        </div>
-        </GlowSection>
-
-        <a
-          href="https://omcn.github.io/personal-cv-website/40401731carnival%20(9)/db%20project/index1.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="fixed top-5 right-5 z-50 bg-emerald-500 text-white text-2xl p-4 rounded-full shadow-lg hover:bg-emerald-400 transition-all"
-          title="Play Game"
-        >
-          Play a game?
-  
-        </a>
-
-
         
+          <a
+            href="https://omcn.github.io/personal-cv-website/40401731carnival%20(9)/db%20project/index1.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="fixed top-5 right-5 z-50 bg-emerald-500 text-white text-2xl p-4 rounded-full shadow-lg hover:bg-emerald-400 transition-all"
+            title="Play Game"
+          >
+            Play a game?
+          </a>
 
-
-        <GlowSection title="References">
-          <p>Paul Bradley – pbradley948@c2ken.net</p>
-          <p>Peter Hill – phill2806@googlemail.com | 0759522779</p>
-        </GlowSection>
       </main>
     </div>
   );
